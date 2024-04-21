@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  
+}
+body{
+    background-color: #ccc;
+}
+.container{
+    max-width: 40vw;
+    margin: 0 auto;
+}
+.apply_box{
+    max-width: 40vw;
+    max-height: 90vh;
+    padding: 3rem 2rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    margin: 4rem auto 0 auto;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    
+}
+.apply_box h2{
+    margin: 0 0 0 1rem;
+}
+
+
+.name{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr) );
+    margin: 1rem 0;
+
+}
+
+.email{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr) );
+    margin: 1rem 0;
+
+}
+
+.address{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr) );
+    margin: 1rem 0;
+
+}
+.city{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr) );
+    margin: 1rem 0;
+
+}
+.date{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr) );
+    margin: 1rem 0;
+
+}
+label{
+    margin: 0 1rem;
+    font-weight: bolder;
+}
+textarea{
+    margin: 0 0 0 1rem;
+
+}
+input:focus{
+    outline-color: red;
+    outline-style: dashed;
+    background-color: rgba(rgb(109, 62, 62), rgb(38, 126, 38), rgb(92, 92, 196), 0.5);
+}
+.btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+}
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: .6rem 2.5rem;
+    color: white;
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+button:hover{
+    background-color: gray;
+    cursor: pointer;
+    transition: .18s ease-out;
+}

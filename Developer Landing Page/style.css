@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero {
+  background-image: url(images/bg.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text_container {
+  color: black;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-left: 1rem;
+}
+
+.lg-text {
+  font-size: 6rem;
+  font-weight: 600;
+}
+.black-box {
+  background-color: black;
+  padding: 3rem 6rem;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  max-width: 100vw;
+}
+.black-box h2 {
+  font-weight: 400;
+}
+.black-box span {
+  font-size: 6rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 100vw;
+}
+.card {
+  margin: 2rem;
+  max-width: 520px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  transition: 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.image img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.content h3 {
+  font-size: 1.7rem;
+  padding-bottom: 2rem;
+}
+.content {
+  padding-top: 3rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.bottom {
+  display: flex;
+  color: white;
+}
+.contact {
+  background-color: rgb(192, 99, 115);
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.contact:hover {
+  transform: scale(1.01);
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.contact h2 {
+  padding-bottom: 1.5rem;
+}
+.about {
+  background-color: gray;
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.about:hover {
+  transform: scale(1.01);
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.about h2 {
+  padding-bottom: 1.5rem;
+}
+footer {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding: 2rem;
+  max-width: 100vw;
+}
+footer:hover {
+  transform: scale(1.01);
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+@media (max-width: 786px) {
+  .hero {
+    min-height: 50vh;
+  }
+  .text_container {
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+  .lg-text {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .black-box {
+    font-size: 1rem;
+    max-width: 100vw;
+  }
+  .black-box span {
+    font-size: 3rem;
+  }
+  footer {
+    font-size: 1.5rem;
+    max-width: 100vw;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+}
